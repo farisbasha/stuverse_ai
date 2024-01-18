@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:image_picker/image_picker.dart';
 
 enum MessageType { Text, Image }
@@ -13,7 +14,7 @@ class Message {
   });
 
   String text;
-  final String? image;
+  final Uint8List? image;
   final MessageType type;
   final MessageAuthor author;
 }

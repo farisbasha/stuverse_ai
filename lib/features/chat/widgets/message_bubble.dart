@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_bubble/chat_bubble.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
@@ -37,12 +38,11 @@ class MessageBubble extends StatelessWidget {
           children: [
             if (message.image != null)
               ClipRRect(
-                borderRadius: BorderRadius.circular(10),
-                child: Image.file(
-                  File(message.image!),
-                  fit: BoxFit.contain,
-                ),
-              ),
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.memory(
+                    message.image!,
+                    fit: BoxFit.contain,
+                  )),
             MarkdownBody(
                 selectable: true,
                 styleSheet: MarkdownStyleSheet(

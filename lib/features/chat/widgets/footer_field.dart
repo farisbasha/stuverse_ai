@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
@@ -16,7 +17,7 @@ class FooterTextField extends StatefulWidget {
 
 class _FooterTextFieldState extends State<FooterTextField> {
   ImagePicker _imagePicker = ImagePicker();
-  XFile? _image;
+  Uint8List? _imageBytes;
 
   void _pickImage({
     ImageSource source = ImageSource.gallery,
@@ -28,10 +29,8 @@ class _FooterTextFieldState extends State<FooterTextField> {
       maxHeight: 500,
     );
     if (image != null) {
-      // Implement image selection logic
-      setState(() {
-        _image = image;
-      });
+      _imageBytes = await image.readAsBytes();
+      setState(() {});
     }
   }
 
@@ -53,13 +52,13 @@ class _FooterTextFieldState extends State<FooterTextField> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          if (_image != null)
+          if (_imageBytes != null)
             Padding(
               padding: const EdgeInsets.only(left: 10, top: 10),
               child: Stack(
                 children: [
-                  Image.file(
-                    File(_image!.path),
+                  Image.memory(
+                    _imageBytes!,
                     width: 50,
                     height: 50,
                     fit: BoxFit.cover,
@@ -77,7 +76,7 @@ class _FooterTextFieldState extends State<FooterTextField> {
                         icon: Icon(Icons.close),
                         onPressed: () {
                           setState(() {
-                            _image = null;
+                            _imageBytes = null;
                           });
                         }),
                   )
@@ -106,11 +105,11 @@ class _FooterTextFieldState extends State<FooterTextField> {
                           context.read<ChatCubit>().sendMessage(
                                 message: _messageFieldController.text,
                                 agent: agent,
-                                image: _image,
+                                imageBytes: _imageBytes,
                               );
                           _messageFieldController.clear();
                           setState(() {
-                            _image = null;
+                            _imageBytes = null;
                           });
                         }
                       },

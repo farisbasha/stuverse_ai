@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stuverse_ai/app/models/agent.dart';
@@ -28,8 +29,21 @@ class HomeScreen extends StatelessWidget {
             for (final agent in agentsList)
               Card(
                 child: ListTile(
-                  leading: CircleAvatar(
-                    backgroundImage: NetworkImage(agent.image),
+                  leading: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: CachedNetworkImage(
+                        imageUrl: agent.image,
+                        fit: BoxFit.cover,
+                        width: 50,
+                        height: 50,
+                        placeholder: (context, url) =>
+                            CircularProgressIndicator(),
+                        errorWidget: (context, url, error) => Image.asset(
+                              'assets/images/stuverse_ai.jpg',
+                              fit: BoxFit.cover,
+                              width: 50,
+                              height: 50,
+                            )),
                   ),
                   title: Text(agent.name),
                   subtitle: Text(agent.description),

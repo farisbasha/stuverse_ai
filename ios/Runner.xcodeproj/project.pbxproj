@@ -185,7 +185,6 @@
 				8ACAD2FA1D35DA8D3DADD4E1 /* Pods-RunnerTests.profile-staging.xcconfig */,
 				474F8C4385D88DB1B951D23A /* Pods-RunnerTests.profile-development.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -498,6 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 7Z3BKZ7T5G;
 				ENABLE_BITCODE = NO;
 				FLAVOR_APP_NAME = "Stuverse Ai";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -592,6 +592,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 7Z3BKZ7T5G;
 				ENABLE_BITCODE = NO;
 				FLAVOR_APP_NAME = testApp;
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -681,6 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 7Z3BKZ7T5G;
 				ENABLE_BITCODE = NO;
 				FLAVOR_APP_NAME = "Stuverse Ai";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -772,9 +774,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-dev";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 7Z3BKZ7T5G;
 				ENABLE_BITCODE = NO;
 				FLAVOR_APP_NAME = "[DEV] Stuverse Ai";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -864,9 +867,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-dev";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 7Z3BKZ7T5G;
 				ENABLE_BITCODE = NO;
 				FLAVOR_APP_NAME = "[DEV] Stuverse Ai";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -955,9 +959,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-dev";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 7Z3BKZ7T5G;
 				ENABLE_BITCODE = NO;
 				FLAVOR_APP_NAME = "[DEV] Stuverse Ai";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -1049,9 +1054,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-stg";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 7Z3BKZ7T5G;
 				ENABLE_BITCODE = NO;
 				FLAVOR_APP_NAME = "[STG] Stuverse Ai";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -1143,9 +1149,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-stg";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 7Z3BKZ7T5G;
 				ENABLE_BITCODE = NO;
 				FLAVOR_APP_NAME = "[STG] Stuverse Ai";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -1232,9 +1239,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-stg";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 7Z3BKZ7T5G;
 				ENABLE_BITCODE = NO;
 				FLAVOR_APP_NAME = "[STG] Stuverse Ai";
 				INFOPLIST_FILE = Runner/Info.plist;

@@ -9,6 +9,7 @@ environment:
 dependencies:
   adaptive_theme: ^3.5.0
   bloc: ^8.1.2
+  cached_network_image: ^3.3.1
   equatable: ^2.0.5
   flutter:
     sdk: flutter
@@ -29,9 +30,24 @@ dev_dependencies:
     sdk: flutter
   mocktail: ^1.0.0
   very_good_analysis: ^5.1.0
+  change_app_package_name: ^1.1.0
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
   generate: true
   assets:
     - .env
+    - assets/images/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/stuverse_ai.jpg"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/stuverse_ai.jpg"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+

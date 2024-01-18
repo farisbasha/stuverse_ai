@@ -54,7 +54,7 @@ android {
         applicationId "com.stuverse.ai.chat"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion flutter.minSdkVersion
+        minSdkVersion 21
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -83,17 +83,17 @@ android {
         production {
             dimension "default"
             applicationIdSuffix ""
-            manifestPlaceholders = [appName: "Stuverse Ai"]
+            manifestPlaceholders = [appName: "Stuverse AI"]
         }
         staging {
             dimension "default"
             applicationIdSuffix ".stg"
-            manifestPlaceholders = [appName: "[STG] Stuverse Ai"]
+            manifestPlaceholders = [appName: "[STG] Stuverse AI"]
         }
         development {
             dimension "default"
             applicationIdSuffix ".dev"
-            manifestPlaceholders = [appName: "[DEV] Stuverse Ai"]
+            manifestPlaceholders = [appName: "[DEV] Stuverse AI"]
         }
     }
 

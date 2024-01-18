@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
@@ -29,7 +27,7 @@ class ChatCubit extends Cubit<ChatState> {
   void addMessage(String message,
       {MessageAuthor author = MessageAuthor.User,
       MessageType type = MessageType.Text,
-      String? image}) {
+      Uint8List? image}) {
     emit(
       state.copyWith(
         messages: [
@@ -46,20 +44,17 @@ class ChatCubit extends Cubit<ChatState> {
   }
 
   void sendMessage(
-      {required String message, required Agent agent, XFile? image}) async {
+      {required String message,
+      required Agent agent,
+      Uint8List? imageBytes}) async {
     try {
       result = '';
       emit(state.copyWith(isLoading: true));
-      Uint8List? imageBytes = null;
-      if (image != null) {
-        imageBytes = await image.readAsBytes();
-      }
-      addMessage(
-        message,
-        author: MessageAuthor.User,
-        type: imageBytes != null ? MessageType.Image : MessageType.Text,
-        image: image?.path,
-      );
+
+      addMessage(message,
+          author: MessageAuthor.User,
+          type: imageBytes != null ? MessageType.Image : MessageType.Text,
+          image: imageBytes);
 
       addMessage(
         "....💬",
