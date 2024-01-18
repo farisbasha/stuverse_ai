@@ -26,8 +26,9 @@ class MainScreen extends StatelessWidget {
       bottomNavigationBar: NavigationBar(
         selectedIndex: navigationShell.currentIndex,
         destinations: const [
-          NavigationDestination(label: 'Section A', icon: Icon(Icons.home)),
-          NavigationDestination(label: 'Section B', icon: Icon(Icons.settings)),
+          NavigationDestination(label: 'Agents', icon: Icon(Icons.message)),
+          NavigationDestination(
+              label: 'Profile', icon: Icon(Icons.account_box)),
         ],
         onDestinationSelected: _goBranch,
       ),

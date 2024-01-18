@@ -31,7 +31,6 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
 
   // Add cross-flavor configuration here
   await dotenv.load(fileName: ".env");
-  print(dotenv.env['GEMINI_API']);
   Gemini.init(apiKey: dotenv.env['GEMINI_API'] ?? "");
   runApp(await builder());
 }
