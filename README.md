@@ -29,3 +29,11 @@ $ flutter run --flavor production --target lib/main_production.dart
 ```
 
 _\*Stuverse Ai works on iOS, Android, Web, and Windows._
+
+
+
+[coverage_badge]: coverage_badge.svg
+
+[license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
+[license_link]: https://opensource.org/licenses/MIT
+
