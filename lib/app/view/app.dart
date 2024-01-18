@@ -15,6 +15,8 @@ class App extends StatelessWidget {
       dark: AppTheme.darkTheme,
       initial: AdaptiveThemeMode.system,
       builder: (theme, darkTheme) => MaterialApp.router(
+        debugShowCheckedModeBanner: false,
+        title: "Stuverse AI",
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
         theme: theme,
