@@ -23,6 +23,7 @@ dependencies:
   go_router: ^13.0.1
   image_picker: ^1.0.7
   intl: ^0.18.0
+  logman: ^0.0.5
 
 dev_dependencies:
   bloc_test: ^9.1.4

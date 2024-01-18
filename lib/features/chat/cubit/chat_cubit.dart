@@ -49,7 +49,7 @@ class ChatCubit extends Cubit<ChatState> {
       Uint8List? imageBytes}) async {
     try {
       result = '';
-      emit(state.copyWith(isLoading: true));
+      emit(state.copyWith(isLoading: true, isError: false, errorMessage: ''));
 
       addMessage(message,
           author: MessageAuthor.User,
@@ -80,10 +80,19 @@ class ChatCubit extends Cubit<ChatState> {
       }, onDone: () {
         emit(
             state.copyWith(isLoading: false)); // Replace 'setState' with 'emit'
+      }, onError: (e) {
+        print(e);
+        emit(state.copyWith(
+            isLoading: false,
+            isError: true,
+            errorMessage: e.toString())); // Replace 'setState' with 'emit'
       });
     } catch (e) {
       print(e);
-      emit(state.copyWith(isLoading: false)); // Replace 'setState' with 'emit'
+      emit(state.copyWith(
+          isLoading: false,
+          isError: true,
+          errorMessage: e.toString())); // Replace 'setState' with 'emit'
     }
   }
 }

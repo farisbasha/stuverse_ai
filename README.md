@@ -30,6 +30,10 @@ $ flutter run --flavor production --target lib/main_production.dart
 _\*Stuverse Ai works on iOS, Android, Web, and Windows._
 
 
+---
+
+### Live Demo
+![Click here][https://stuverse-ai.web.app/#/home]
 
 [coverage_badge]: coverage_badge.svg
 
