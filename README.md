@@ -2,6 +2,8 @@
 
 ![coverage][coverage_badge]
 [![License: MIT][license_badge]][license_link]
+### Live Demo
+[Click here](https://stuverse-ai.web.app/#/home)
 
 
 ---
@@ -32,8 +34,7 @@ _\*Stuverse Ai works on iOS, Android, Web, and Windows._
 
 ---
 
-### Live Demo
-![Click here][https://stuverse-ai.web.app/#/home]
+
 
 [coverage_badge]: coverage_badge.svg
 
