@@ -1,6 +1,7 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:stuverse_ai/app/utils/common_utils.dart';
 import 'package:stuverse_ai/app/utils/constants.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -15,30 +16,15 @@ class ProfileScreen extends StatelessWidget {
           //switch theme
           IconButton(
             onPressed: () {
-              if (AdaptiveTheme.of(context).mode.isDark) {
-                AdaptiveTheme.of(context).setLight();
-              } else {
-                AdaptiveTheme.of(context).setDark();
-              }
+              CommonUtils.changeTheme(context);
             },
             icon: const Icon(Icons.brightness_6),
           ),
         ],
       ),
       body: Center(
-        child: Column(
-          children: [
-            Container(
-              child: const Text('Profile Screen'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                context.go(Routes.homeScreenName);
-              },
-              child: const Text('Show snack bar'),
-            ),
-          ],
-        ),
+        child: Text(
+            'Profile and Premium Features will be available here,\nIt will be available in the next update.'),
       ),
     );
   }
