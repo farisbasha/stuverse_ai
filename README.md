@@ -1,9 +1,8 @@
-# Stuverse Ai
+# Stuverse AI Chat bot
 
 ![coverage][coverage_badge]
 [![License: MIT][license_badge]][license_link]
 
-Stuverse AI Chat bot
 
 ---
 
