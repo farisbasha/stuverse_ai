@@ -2,6 +2,8 @@
 
 ![coverage][coverage_badge]
 [![License: MIT][license_badge]][license_link]
+### Live Demo
+[Click here](https://stuverse-ai.web.app/#/home)
 
 
 ---
@@ -28,6 +30,9 @@ $ flutter run --flavor production --target lib/main_production.dart
 ```
 
 _\*Stuverse Ai works on iOS, Android, Web, and Windows._
+
+
+---
 
 
 
